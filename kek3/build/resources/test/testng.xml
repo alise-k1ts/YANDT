@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite	name = "Default Suite">
+	<test name="kek3"  parallel="tests" thread-count="2">
+		<groups>
+			<run>
+
+				<include name="SW-.*"></include>
+
+			</run>
+		</groups>
+		<classes>
+			<class name = "MainClass"></class>
+		</classes>
+	</test>
+</suite>		

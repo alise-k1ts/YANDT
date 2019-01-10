@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite	name = "Default Suite">
+	<test name="kek3"  parallel="tests" thread-count="2">
+		<groups>
+			<run>
+				<include name="BEF-1"></include>
+				<include name="AFT-1"></include>
+				<include name="SW-1"></include>
+				<include name="MES-4"></include>
+				<include name="DEL-1"></include>
+				<exclude name="MES-1"></exclude>
+				<exclude name="MES-3"></exclude>
+
+			</run>
+		</groups>
+		<classes>
+			<class name = "MainClass"></class>
+		</classes>
+	</test>
+</suite>		
